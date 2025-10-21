@@ -38,6 +38,44 @@
 
   <div class="container mt-4">
     <h1>Ini adalah halaman Mahasiswa</h1>
+
+<!-- ROWSPAN = untuk menggabungkan baris
+     COLSPAN = untuk menggabungkan kolom -->
+
+    <table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
+      <thead>
+        <tr>
+          <th>NIM</th>
+          <th>Nama Mahasiswa</th>
+          <th>Jenis Kelamin</th>
+          <th colspan="2">Tempat & Tanggal Lahir</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>0702232101</td>
+        <td>Miftah Khairunnisa Nasution</td>
+        <td>Perempuan</td>
+        <td>07-09-20005</td>
+        <td rowspan="3">Simalungun</td>
+      </tr>
+      <tr>
+        <td>0702232104</td>
+        <td>Kim Taehyung</td>
+        <td>Laki-Laki</td>
+        <td>07-09-1996</td>
+     
+      </tr>
+      <tr>
+        <td>0702232105</td>
+        <td>Jeon Jungkook</td>
+        <td>Laki-laki</td>
+        <td>01-09-1997</td>
+        
+      </tr>
+      </tbody>
+    </table>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
