@@ -48,32 +48,23 @@
           <th>NIM</th>
           <th>Nama Mahasiswa</th>
           <th>Jenis Kelamin</th>
-          <th colspan="2">Tempat & Tanggal Lahir</th>
-          
+          <th colspan="2">Tempat & Tanggal Lahir</th> 
         </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>0702232101</td>
-        <td>Miftah Khairunnisa Nasution</td>
-        <td>Perempuan</td>
-        <td>07-09-20005</td>
-        <td rowspan="3">Simalungun</td>
-      </tr>
-      <tr>
-        <td>0702232104</td>
-        <td>Kim Taehyung</td>
-        <td>Laki-Laki</td>
-        <td>07-09-1996</td>
-     
-      </tr>
-      <tr>
-        <td>0702232105</td>
-        <td>Jeon Jungkook</td>
-        <td>Laki-laki</td>
-        <td>01-09-1997</td>
-        
-      </tr>
+        <?php $nilai_awal = 0; ?>
+        @while ($nilai_awal < $jumlah)
+
+        <tr>
+          <td>{{ $npm [$nilai_awal] }}</td>
+          <td>{{ $nama [$nilai_awal] }}</td>
+          <td>Perempuan</td>
+          <td>07-09-20005</td>
+          <td>Simalungun</td>
+        </tr>
+
+        <?php $nilai_awal++ ?>
+        @endwhile
       </tbody>
     </table>
   </div>
