@@ -37,28 +37,10 @@
   </nav>
 
   <div class="container mt-4">
-    <h1>Ini adalah halaman Mahasiswa</h1>
-
-    <div class="row">
-      <!-- Tabel Mahasiswa -->
-      <div class="col-sm-6">
-        <h4>Tabel Mahasiswa</h4>
-        <table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
-          <thead>
-            <tr>
-              <th>NIM</th>
-              <th>Nama Mahasiswa</th>
-              <th>Jenis Kelamin</th>
-              <th colspan="2">Tempat & Tanggal Lahir</th>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
-      </div>
+    <h1>Ini adalah halaman Tambah Mahasiswa</h1>
 
       <!-- Form Mahasiswa -->
-      <div class="col-sm-6">
+      <div class="col-sm-12">
         <h4>Form Mahasiswa</h4>
         <form action="" method="GET">
           <div class="row">
@@ -89,9 +71,12 @@
           </div>
 
           <!-- BUTTON -->
-          <div class="row mt-3">
-            <div class="col-sm-12">
+          <div class="row mt-2">
+            <div class="col-sm-6">
               <button class="btn btn-primary w-100" type="submit">Simpan</button>
+            </div>
+            <div class="col-sm-6">
+              <a href="/mahasiswa"class="btn btn-secondary  w-100">Kembali</a>
             </div>
           </div>
 
